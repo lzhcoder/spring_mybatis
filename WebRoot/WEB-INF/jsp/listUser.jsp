@@ -44,13 +44,13 @@
 					}else{
 						tableBody.append('<tr class="gradeC"></tr>'); 
 					}
-			　　		var tr = $('tr:last', tableBody); 
+			    	var tr = $('tr:last', tableBody); 
 					var uid = json[i].uid;
-			　　		tr.append('<td>' + uid + '</td>'); 
-			　　		tr.append('<td>' + json[i].name + '</td>'); 
-			　　		tr.append('<td>' + json[i].age + '</td>'); 
-			　　		tr.append('<td>' + json[i].phone + '</td>'); 
-			　　		tr.append("<td><a href=\"${pageContext.request.contextPath}/toUpdateUser.do?uid="+uid+"\">更新</a>|"+
+			    	tr.append('<td>' + uid + '</td>'); 
+			    	tr.append('<td>' + json[i].name + '</td>'); 
+		        	tr.append('<td>' + json[i].age + '</td>'); 
+			    	tr.append('<td>' + json[i].phone + '</td>'); 
+		        	tr.append("<td><a href=\"${pageContext.request.contextPath}/toUpdateUser.do?uid="+uid+"\">更新</a>|"+
 									"<a href=\"${pageContext.request.contextPath}/deleteUser.do?uid="+uid+"\">删除</a>|"+
 									"<a href=\"${pageContext.request.contextPath}/toAddNewAddress.do?uid="+uid+"\">添加新地址</a></td>");
 				});
